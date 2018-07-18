@@ -1,0 +1,51 @@
+@import "_common";
+@import "_size";
+@import "_paper";
+
+$font1: 'ＭＳ Ｐ明朝';
+$font2: 'ＭＳ Ｐゴシック';
+
+/* --- font control --- */
+.MoneyStyle		{ font-size:14px; font-family: $font1; text-align:right }
+.TitleStyle		{ font-size:12px; font-family: $font2; }
+.HeadTitle		{ font-size:21px; font-family: $font2; text-align:center }
+.ContentStyle	{ font-size:12px; font-family: $font1; }
+.text1			{ font-size:14px; font-family: $font1; }
+.text2			{ font-size:14px }
+.text3			{ font-size:20px }
+.text4			{ font-size:18px }
+.text5			{ font-size:12px; font-family: $font1; }
+.text6			{ font-size:12px }
+.under			{ border-bottom:1px solid #000; display:inline-block; }
+
+/* --- layout control --- */
+.tbl_layout		{ border:0px; border-collapse:collapse; border-spacing:0px; table-layout:auto; empty-cells:hide; }
+.tbl_grid		{ border:3px solid #000; border-collapse:collapse; border-spacing:0px; table-layout:auto; empty-cells:show; }
+.tbl_grid td, .tr_show td,
+.td_show		{ border:1px solid #555; empty-cells:show; }
+.box_right		{ float:right; }
+.box_left		{ float:left; }
+
+/* --- custom checkboxes --- */
+input[type=radio], 
+input[type=checkbox] {
+	display:none;
+}
+
+input[type=radio] + label:before,
+input[type=checkbox] + label:before {
+	font-family:'Font Awesome 5 Free';
+	display:inline-block;
+	width:13px;
+	content:"\f0c8";
+}
+
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before {
+	content:"\f14a";
+}
+
+label + input[type=radio] + label,
+label + input[type=checkbox] + label {
+	margin-left:5px;
+}

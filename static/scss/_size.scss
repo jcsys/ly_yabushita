@@ -1,0 +1,62 @@
+// size control
+.H020		{ height: 20px !important; }
+.H025		{ height: 25px !important; }
+.H030		{ height: 30px !important; }
+.H040		{ height: 40px !important; }
+.H045		{ height: 45px !important; }
+.H050		{ height: 50px !important; }
+.H080		{ height: 80px !important; }
+.H090		{ height: 90px !important; }
+.H100		{ height:100px !important; }
+.H120		{ height:120px !important; }
+.H150		{ height:150px !important; }
+.H152		{ height:152px !important; }
+
+.W020		{ width:  20px !important; }
+.W025		{ width:  25px !important; }
+.W030		{ width:  30px !important; }
+.W035		{ width:  35px !important; }
+.W040		{ width:  40px !important; }
+.W045		{ width:  45px !important; }
+.W050		{ width:  50px !important; }
+.W075		{ width:  75px !important; }
+.W100		{ width: 100px !important; }
+.W120		{ width: 120px !important; }
+.W135   	{ width: 135px !important; }
+.W140   	{ width: 140px !important; }
+.W150		{ width: 150px !important; }
+.W160   	{ width: 160px !important; }
+.W175		{ width: 175px !important; }
+.W200		{ width: 200px !important; }
+.W250		{ width: 250px !important; }
+.W300		{ width: 300px !important; }
+.W350		{ width: 350px !important; }
+.W400		{ width: 400px !important; }
+.W450		{ width: 450px !important; }
+.W500		{ width: 500px !important; }
+.W550		{ width: 550px !important; }
+.W580		{ width: 580px !important; }
+.W600		{ width: 600px !important; }
+
+.H10P		{ height:  10% !important; }
+.H25P		{ height:  25% !important; }
+.H50P		{ height:  50% !important; }
+.H75P		{ height:  75% !important; }
+.H80P		{ height:  80% !important; }
+.H85P		{ height:  85% !important; }
+.H90P		{ height:  90% !important; }
+.H100P		{ height: 100% !important; }
+
+.W10P		{ width:  10%  !important; }
+.W15P		{ width:  15%  !important; }
+.W20P		{ width:  20%  !important; }
+.W25P		{ width:  25%  !important; }
+.W50P		{ width:  50%  !important; }
+.W75P		{ width:  75%  !important; }
+.W95P		{ width:  95%  !important; }
+.W98P		{ width:  98%  !important; }
+.W100P		{ width: 100%  !important; }
+
+.W100P-W020	{ width: calc(100% - 20px) !important; }
+.W100P-W025	{ width: calc(100% - 25px) !important; }
+.W100P-W030	{ width: calc(100% - 30px) !important; }

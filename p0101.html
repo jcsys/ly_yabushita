@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<meta name="description" content="overview &amp; stats" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<title>イトウゴフク本部管理システム</title>
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/components/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/ace-fonts.css" />
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style"/>
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/ace-skins.css" />
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/ace-rtl.css" />
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/ace-extra.js"></script>
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/assets/css/ace.onpage-help.css" />
+	<link rel="stylesheet" href="static/vendor/ace_admin-1.4.0/docs/assets/js/themes/sunburst.css" />
+	<style>
+		.tbl {border-collapse: collapse;}
+		.tbl td {border: solid 1px gray; padding: 2px;}
+		.tbl .lbl {background-color: #C5D9F1}
+		.tbl-data tr {height: 25px;border-collapse: collapse;}
+		.tbl-data thead, .tbl-data .head {background-color: lightgray; text-align: center;}
+		.w100p {width: 100%;}
+		.w50p {width: 50%;}
+		.w45p {width: 45%;}
+		.w50 {width: 50px;}
+		.w60 {width: 60px;}
+		.w75 {width: 75px;}
+		.w85 {width: 85px;}
+		.w100 {width: 100px;}
+		.w125 {width: 125px;}
+		.w150 {width: 150px;}
+		.w500 {width: 500px;}
+		.h25 {height: 25px;}
+		.h50 {height: 50px;}
+		.text-right {text-align: right}
+		.text-center {text-align: center}
+		.nobody {border: none !important;}
+		.innertext {border: none !important; margin: 0px !important; padding: 1px !important;}
+	</style>
+</head>
+
+<body class="no-skin">
+	<!-- TOP:バー -->
+	<div id="navbar" class="navbar navbar-default ace-save-state">
+		<div class="navbar-container ace-save-state" id="navbar-container">
+			<!-- left: Sidebar切り替えボタン（小画面のみ表示） -->
+			<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+				<span class="sr-only">Toggle sidebar</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<!-- middle: タイトル -->
+			<div class="navbar-header pull-left">
+				<a href="#" class="navbar-brand">
+					<small>
+						<i class="fa fa-leaf"></i>
+						イトウゴフク
+					</small>
+				</a>
+			</div>
+
+			<!-- right: message button -->
+			<div class="navbar-buttons navbar-header pull-right" role="navigation">
+				<ul class="nav ace-nav">
+					<li class="grey dropdown-modal">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="ace-icon fa fa-tasks"></i>
+							<span class="badge badge-grey">4</span>
+						</a>
+
+						<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+							<li class="dropdown-header">
+								<i class="ace-icon fa fa-check"></i>
+								担当タスク4件
+							</li>
+
+							<li class="dropdown-content">
+								<ul class="dropdown-menu dropdown-navbar">
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">XXXX仕入</span>
+												<span class="pull-right">65%</span>
+											</div>
+
+											<div class="progress progress-mini">
+												<div style="width:65%" class="progress-bar"></div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">XXX店棚卸</span>
+												<span class="pull-right">35%</span>
+											</div>
+
+											<div class="progress progress-mini">
+												<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">XXXX在庫確認</span>
+												<span class="pull-right">15%</span>
+											</div>
+
+											<div class="progress progress-mini">
+												<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">XXXX入庫処理</span>
+												<span class="pull-right">90%</span>
+											</div>
+
+											<div class="progress progress-mini progress-striped active">
+												<div style="width:90%" class="progress-bar progress-bar-success"></div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown-footer">
+								<a href="#">
+									すべてのタスク表示
+									<i class="ace-icon fa fa-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="purple dropdown-modal">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="ace-icon fa fa-bell icon-animated-bell"></i>
+							<span class="badge badge-important">8</span>
+						</a>
+
+						<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+							<li class="dropdown-header">
+								<i class="ace-icon fa fa-exclamation-triangle"></i>
+								通知情報８件
+							</li>
+
+							<li class="dropdown-content">
+								<ul class="dropdown-menu dropdown-navbar navbar-pink">
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">
+													<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+													新規記事
+												</span>
+												<span class="pull-right badge badge-info">+12</span>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<i class="btn btn-xs btn-primary fa fa-user"></i>
+											XXXX店XXXXXXX
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">
+													<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
+													新規注文
+												</span>
+												<span class="pull-right badge badge-success">+8</span>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="clearfix">
+												<span class="pull-left">
+													<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
+													新規依頼
+												</span>
+												<span class="pull-right badge badge-info">+11</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown-footer">
+								<a href="#">
+									すべての通知情報表示
+									<i class="ace-icon fa fa-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="green dropdown-modal">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+							<span class="badge badge-success">5</span>
+						</a>
+
+						<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+							<li class="dropdown-header">
+								<i class="ace-icon fa fa-envelope-o"></i>
+								伝言５件
+							</li>
+
+							<li class="dropdown-content">
+								<ul class="dropdown-menu dropdown-navbar">
+									<li>
+										<a href="#" class="clearfix">
+											<img src="static/vendor/ace_admin-1.4.0/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+											<span class="msg-body">
+												<span class="msg-title">
+													<span class="blue">XXX店YYY:</span>
+													婦人靴回転率低下、XX...
+												</span>
+
+												<span class="msg-time">
+													<i class="ace-icon fa fa-clock-o"></i>
+													<span>1日前</span>
+												</span>
+											</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="clearfix">
+											<img src="static/vendor/ace_admin-1.4.0/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+											<span class="msg-body">
+												<span class="msg-title">
+													<span class="blue">ZZZ店MMMM:</span>
+													子供XXXXX好調 ...
+												</span>
+
+												<span class="msg-time">
+													<i class="ace-icon fa fa-clock-o"></i>
+													<span>20分前</span>
+												</span>
+											</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="clearfix">
+											<img src="static/vendor/ace_admin-1.4.0/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+											<span class="msg-body">
+												<span class="msg-title">
+													<span class="blue">XXXX:</span>
+													XXXXXXXXXXXXXXXXXXX ...
+												</span>
+
+												<span class="msg-time">
+													<i class="ace-icon fa fa-clock-o"></i>
+													<span>15:15</span>
+												</span>
+											</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="clearfix">
+											<img src="static/vendor/ace_admin-1.4.0/assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+											<span class="msg-body">
+												<span class="msg-title">
+													<span class="blue">YYY:</span>
+													YYYYYYYYYYYYYYYYYYY ...
+												</span>
+
+												<span class="msg-time">
+													<i class="ace-icon fa fa-clock-o"></i>
+													<span>13:33</span>
+												</span>
+											</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="clearfix">
+											<img src="static/vendor/ace_admin-1.4.0/assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+											<span class="msg-body">
+												<span class="msg-title">
+													<span class="blue">ZZZZ:</span>
+													ZZZZZZZZZZZZZZZZZZZ ...
+												</span>
+
+												<span class="msg-time">
+													<i class="ace-icon fa fa-clock-o"></i>
+													<span>10:09</span>
+												</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown-footer">
+								<a href="inbox.html">
+									すべての伝言表示
+									<i class="ace-icon fa fa-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="light-blue dropdown-modal">
+						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+							<img class="nav-user-photo" src="static/vendor/ace_admin-1.4.0/assets/avatars/user.jpg" alt="Jason's Photo" />
+							<span class="user-info">
+								<small>本支店</small>
+								伊藤 太郎
+							</span>
+							<i class="ace-icon fa fa-caret-down"></i>
+						</a>
+
+						<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+							<li>
+								<a href="#">
+									<i class="ace-icon fa fa-cog"></i>個人設定
+								</a>
+							</li>
+
+							<li>
+								<a href="profile.html">
+									<i class="ace-icon fa fa-user"></i>プロファイル
+								</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a id="ace-settings-btn" href="#">
+									<i class="ace-icon fa fa-wrench"></i>テーマ設定
+								</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a href="#">
+									<i class="ace-icon fa fa-power-off"></i>ログアウト
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Middle:内容 -->
+	<div class="main-container ace-save-state" id="main-container">
+		<script type="text/javascript">
+			try { ace.settings.loadState('main-container') } catch (e) { }
+		</script>
+
+		<!-- Left:メニュー -->
+		<div id="sidebar" class="sidebar responsive ace-save-state">
+			<script type="text/javascript">
+				try { ace.settings.loadState('sidebar') } catch (e) { }
+			</script>
+
+			<!-- top: quick button -->
+			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+				<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+					<button class="btn btn-success">
+						<i class="ace-icon fa fa-signal"></i>
+					</button>
+
+					<button class="btn btn-info">
+						<i class="ace-icon fa fa-pencil"></i>
+					</button>
+
+					<!-- #section:basics/sidebar.layout.shortcuts -->
+					<button class="btn btn-warning">
+						<i class="ace-icon fa fa-users"></i>
+					</button>
+
+					<button class="btn btn-danger">
+						<i class="ace-icon fa fa-cogs"></i>
+					</button>
+
+					<!-- /section:basics/sidebar.layout.shortcuts -->
+				</div>
+
+				<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+					<span class="btn btn-success"></span>
+
+					<span class="btn btn-info"></span>
+
+					<span class="btn btn-warning"></span>
+
+					<span class="btn btn-danger"></span>
+				</div>
+			</div>
+
+			<!-- middle: menu list -->
+			<ul class="nav nav-list">
+				<li class="active">
+					<a href="index.html">
+						<i class="menu-icon fa fa-tachometer"></i>
+						<span class="menu-text">トップ</span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-desktop"></i>
+						<span class="menu-text">本部業務</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						<li class="">
+							<a href="p0100.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0101.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								本部発注
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0102.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								FJ仕入取込
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0103.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								電子納品取込
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0104.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店舗発注
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0105.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								発注照会
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0106.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								在庫問合せ
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0107.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								値札発行
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0108.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								期末更新
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="#" class="dropdown-toggle">
+								<i class="menu-icon fa fa-caret-right"></i>
+								残高調整
+								<b class="arrow fa fa-angle-down"></b>
+							</a>
+
+							<b class="arrow"></b>
+
+							<ul class="submenu">
+								<li class="">
+									<a href="p0108_01.html">
+										<i class="menu-icon fa fa-leaf green"></i>
+										Item #1
+									</a>
+									<b class="arrow"></b>
+								</li>
+								<li class="">
+									<a href="#" class="dropdown-toggle">
+										<i class="menu-icon fa fa-pencil orange"></i>
+										4th level
+										<b class="arrow fa fa-angle-down"></b>
+									</a>
+
+									<b class="arrow"></b>
+
+									<ul class="submenu">
+										<li class="">
+											<a href="p0108_02_01.html">
+												<i class="menu-icon fa fa-plus purple"></i>
+												Add Product
+											</a>
+											<b class="arrow"></b>
+										</li>
+										<li class="">
+											<a href="p0108_02_02.html">
+												<i class="menu-icon fa fa-eye pink"></i>
+												View Products
+											</a>
+											<b class="arrow"></b>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-list"></i>
+						<span class="menu-text">店舗業務</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						<li class="">
+							<a href="p0200.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0201.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店間移動
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0202.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								移動日報
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0203.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								移動格下入力
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0204.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								移動格下指示表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0205.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								値下処理
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0206.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								値下日報
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0207.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								廃棄処理
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0208.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								廃棄日報
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0209.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								レシート照会
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0210.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								レジ清算リスト
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-pencil-square-o"></i>
+						<span class="menu-text">在庫管理</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						<li class="">
+							<a href="p0300.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0301.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								在庫検索
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0302.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品入出庫リスト発行
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0303.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								在庫リスト
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0304.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸日付指定
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0305.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸入力
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0306.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸一覧表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0307.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸更新
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0308.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸取込
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0309.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								棚卸過不足
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-list-alt"></i>
+						<span class="menu-text">管理帳票</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+					<ul class="submenu">
+						<li class="">
+							<a href="p0400.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0401.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								営業報告書
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0402.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別売上ランキング表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0403.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								中間ランキング表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0404.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別ライン別売上表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0405.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別日別売上実績
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0406.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別週別売上実績
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0407.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別月次売上実績
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0408.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別期間売上実績
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0409.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別動向表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0410.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								販促消化率分析表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0411.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Set商品動向表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0412.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								FA商品売上集計
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0413.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								クラス別売上表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0414.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								ライン別売上表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0415.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								クラス別週次売上表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0416.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								ユニット別売上表
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-calendar"></i>
+						<span class="menu-text">計画管理
+							<span class="badge badge-transparent tooltip-error" title="2 Important Events">
+								<i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
+							</span>
+						</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+
+					<b class="arrow"></b>
+					
+					<ul class="submenu">
+						<li class="">
+							<a href="p0500.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0501.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別部門別目標登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0502.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店舗別クラス別実績
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0503.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								クラス別仕入計画作成
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0504.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								新店配分率登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0505.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								仕入計画実績チェック
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0506.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								フェイス計画表
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0507.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店別売上目標対実績表
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-picture-o"></i>
+						<span class="menu-text">マスタ業務</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+
+					<b class="arrow"></b>
+					
+					<ul class="submenu">
+						<li class="">
+							<a href="p0600.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								＜＜業務フロー＞＞
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0601.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0602.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品ユニット登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0603.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品クラス登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0604.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品ライン登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0605.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品部門登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0606.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品区分登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0607.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品概要登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0608.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								シーズン登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0609.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								税区分登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0610.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								商品別消費税率登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0611.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								会社情報登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0612.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店舗登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0613.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								担当者登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0614.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								バイヤー登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0615.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								納品先登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0616.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								仕入先登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0617.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								指定仕入先商品登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0618.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								EOS集計先登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0619.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								仕入先別店変換登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0620.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								締キー登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0621.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								カレンダー登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0622.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								スケジュール登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0623.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								メール文面登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0624.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								自社メール情報登録
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-tag"></i>
+						<span class="menu-text">店舗送受信</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						<li class="">
+							<a href="p0701.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								送受信命令設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0702.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								店舗送受信処理
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0703.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								送受信結果確認
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0704.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								送受信エラー確認
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0705.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								最終送信コード修正
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0706.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								最終受信コード修正
+							</a>
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="p0707.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								DBメンテナンス
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-file-o"></i>
+						<span class="menu-text">設定
+							<span class="badge badge-primary">5</span>
+						</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						<li class="">
+							<a href="p9901.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								AAA設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+
+						<li class="">
+							<a href="p9902.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								BBB設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+
+						<li class="">
+							<a href="p9903.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								CCC設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+
+						<li class="">
+							<a href="p9904.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								DDD設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+
+						<li class="">
+							<a href="p9905.html">
+								<i class="menu-icon fa fa-caret-right"></i>
+								EEE設定
+							</a>
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- buttom: menu on/off -->
+			<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+				<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left"
+				 data-icon2="ace-icon fa fa-angle-double-right"></i>
+			</div>
+		</div>
+
+		<!-- Right -->
+		<div class="main-content">
+			<div class="main-content-inner">
+				<!-- path bar -->
+				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li class="active">
+							<i class="ace-icon fa fa-home home-icon"></i>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="p0100.html">本部業務</a>
+						</li>
+						<li>
+							<a href="#">本部発注</a>
+						</li>
+					</ul>
+
+					<div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input type="text" placeholder="検索 ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+								<i class="ace-icon fa fa-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div>
+				</div>
+
+				<div class="page-content">
+					<!-- Theam Setting -->
+					<div class="ace-settings-container" id="ace-settings-container">
+						<div class="ace-settings-box clearfix" id="ace-settings-box">
+							<div class="ace-settings-item">
+								<div class="pull-left">
+									<select id="skin-colorpicker" class="hide">
+										<option data-skin="no-skin" value="#438EB9">#438EB9</option>
+										<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+										<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+										<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+									</select>
+								</div>
+								<span>&nbsp; テーマ色</span>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-navbar" autocomplete="off" />
+								<label class="lbl" for="ace-settings-navbar"> タイトルバー固定</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar" autocomplete="off" />
+								<label class="lbl" for="ace-settings-sidebar"> サイドバー固定</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-breadcrumbs" autocomplete="off" />
+								<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container" autocomplete="off" />
+								<label class="lbl" for="ace-settings-add-container">ページ幅固定</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off" />
+								<label class="lbl" for="ace-settings-hover"> マウスONでサブメニュー展開</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off" />
+								<label class="lbl" for="ace-settings-compact"> コンパクトサイドバー</label>
+							</div>
+
+							<div class="ace-settings-item">
+								<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" autocomplete="off" />
+								<label class="lbl" for="ace-settings-highlight"> カレントメニュー強調</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Page Row -->
+					<div class="row">
+						<div class="tabtable">
+							<ul class="nav nav-tabs" id="myTab">
+								<li class="active">
+									<a data-toggle="tab" href="#tab1">
+										<i class="green ace-icon fa fa-home bigger-120"></i>
+										発注伝票入力
+									</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#tab2">
+										<i class="green ace-icon fa fa-calendar bigger-120"></i>
+										本部入荷入力
+									</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#tab3">
+										<i class="green ace-icon fa fa-shield bigger-120"></i>
+										本部入荷確定
+									</a>
+								</li>
+							</ul>
+
+							<div class="tab-content">
+								<!-- 発注伝票入力 -->
+								<div id="tab1" class="tab-pane fade in active">
+									<div class="row">
+										<div class="col-sm-6">
+											<table class="w100p">
+												<tr>
+													<td class="w75 text-right">伝票No．&nbsp;</td><td class="w150"><input type="text" class="w125">&nbsp;<input type="checkbox"><label>仮伝票</label></td>
+													<td class="w75 text-right">バイヤー&nbsp;</td><td class="w150"><input type="text" class="w100p"></td>
+												</tr>
+												<tr>
+													<td class="w75 text-right">仕入先No．</td><td class="w150"><input type="text" class="w100p"></td>
+													<td class="w75 text-right">発注日付&nbsp;</td><td class="w150"><input type="date" class="w100p"></td>
+												</tr>
+												<tr>
+													<td class="w75 text-right">仕入先名&nbsp;</td><td class="w150"><input type="text" class="w100p"></td>
+													<td class="w75 text-right">納品日付&nbsp;</td><td class="w150"><input type="date" class="w100p"></td>
+												</tr>
+												<tr><td class="w75 text-right">摘　要&nbsp;</td><td colspan="4"><input type="text" class="w100p"></td></tr>
+											</table>
+
+										</div>
+										<div class="col-sm-4">
+											<table class="tbl w100p">
+												<tr><td class="lbl">数量合計</td><td class="lbl">仕入金額</td><td class="lbl">消費税</td><td class="lbl">売価金額</td></tr>
+												<tr><td>200</td><td></td><td></td><td></td></tr>
+											</table>
+										</div>
+										<div class="col-sm-2">
+											<table class="tbl w100p">
+												<tr><td class="lbl">配分店舗数</td><td>48</td></tr>
+												<tr><td class="lbl">配分率計</td><td>100%</td></tr>
+												<tr><td class="lbl">本部在庫</td><td>15</td></tr>
+												<tr><td class="lbl">本部在庫</td><td>185</td></tr>
+											</table>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-sm-12">
+											<table class="tbl-data tbl w100p">
+												<thead>
+													<tr>
+														<td rowspan="2">No</td>
+														<td colspan="3">商品コード</td>
+														<td>クラス</td>
+														<td>ユニット</td>
+														<td>ライン</td>
+														<td>部門</td>
+														<td>メーカーコード</td>
+														<td colspan="5">商品名</td>
+														<td colspan="3">コメント</td>
+														<td>カラー</td>
+														<td>サイズ</td>
+													</tr>
+													<tr>
+														<td>セット数</td>
+														<td class="text-center">×</td>
+														<td>数量</td>
+														<td colspan="2">数量</td>
+														<td colspan="2">数量計</td>
+														<td>下代</td>
+														<td>売価</td>
+														<td>メーカー上代</td>
+														<td>メーカー上代</td>
+														<td>仕入週間</td>
+														<td>値札</td>
+														<td>発売開始日</td>
+														<td>取扱終了日</td>
+														<td>纳品日</td>
+														<td>備考</td>
+														<td>納入先</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td rowspan="2" class="head">1</td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="5"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td class="text-center">×</td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="head">2</td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="5"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td class="text-center">×</td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="head">3</td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="5"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td class="text-center">×</td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="head">4</td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="5"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td class="text-center">×</td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td rowspan="2" class="head">5</td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="5"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="3"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td class="text-center">×</td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td colspan="2"><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+														<td><input type="text" name="" id="" class="innertext h20 w100p"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-sm-2">
+											<table class="tbl w100p">
+												<tr><td class="lbl">本部在庫</td><td>15</td></tr>
+												<tr><td class="lbl">配分店舗数</td><td>48</td></tr>
+												<tr><td class="lbl">配分率計</td><td>100.0%</td></tr>
+											</table>
+											<br>
+											<button class="w45p h50">自動配分</button>
+											<button class="w45p h50">全クリア</button>
+											<button class="w45p h50">新店のみ</button>
+											<button class="w45p h50">ランク選択</button>
+											<button class="w45p h50">再決算</button>
+										</div>
+										<div class="col-sm-10">
+											<table class="tbl-data tbl w100p text-center">
+												<thead>
+													<tr>
+														<td></td>
+														<td>1</td>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td>5</td>
+														<td>6</td>
+														<td>7</td>
+														<td>8</td>
+														<td>9</td>
+														<td>10</td>
+														<td>11</td>
+														<td>12</td>
+														<td>13</td>
+														<td>14</td>
+														<td>15</td>
+														<td>16</td>
+														<td>17</td>
+														<td>18</td>
+														<td>19</td>
+														<td>20</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td rowspan="3" class="head">A</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+													</tr>
+													<tr>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<td rowspan="3" class="head">B</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+													</tr>
+													<tr>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+													</tr>
+													<tr>
+														<td rowspan="3" class="head">C</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td>新倉敷</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td>1.5%</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td>3</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td rowspan="3" class="head">D</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td rowspan="3" class="head">E</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								
+								<!-- 本部入荷入力 -->
+								<div id="tab2" class="tab-pane fade">
+									作成中...
+								</div>
+
+								<!-- 本部入荷確定 -->
+								<div id="tab3" class="tab-pane fade">
+									作成中...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="footer-inner">
+				<div class="footer-content">
+					<span class="bigger-120">株式会社 イトウゴフク &copy; 2018</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- トップまでスクロール -->
+		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+			<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+		</a>
+	</div>
+
+	<script src="static/vendor/ace_admin-1.4.0/components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		if ('ontouchstart' in document.documentElement) document.write("<script src='static/vendor/ace_admin-1.4.0/components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>" + "<" + "/script>");
+	</script>
+	<script src="static/vendor/ace_admin-1.4.0/components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/_mod/jquery-ui.custom/jquery-ui.custom.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/jqueryui-touch-punch/jquery.ui.touch-punch.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/_mod/easypiechart/jquery.easypiechart.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/jquery.sparkline/index.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/Flot/jquery.flot.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/Flot/jquery.flot.pie.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/components/Flot/jquery.flot.resize.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.scroller.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.colorpicker.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.fileinput.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.typeahead.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.wysiwyg.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.spinner.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.treeview.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.wizard.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.aside.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.basics.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.scrolltop.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.ajax-content.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.touch-drag.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.sidebar.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.sidebar-scroll-1.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.submenu-hover.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.widget-box.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.settings.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.settings-rtl.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.settings-skin.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.widget-on-reload.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.searchbox-autocomplete.js"></script>
+
+	<!-- inline scripts related to this page -->
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.easy-pie-chart.percentage').each(function(){
+				var $box = $(this).closest('.infobox');
+				var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+				var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+				var size = parseInt($(this).data('size')) || 50;
+				$(this).easyPieChart({
+					barColor: barColor,
+					trackColor: trackColor,
+					scaleColor: false,
+					lineCap: 'butt',
+					lineWidth: parseInt(size/10),
+					animate: ace.vars['old_ie'] ? false : 1000,
+					size: size
+				});
+			})
+		
+			$('.sparkline').each(function(){
+				var $box = $(this).closest('.infobox');
+				var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+				$(this).sparkline('html',
+									{
+									tagValuesAttribute:'data-values',
+									type: 'bar',
+									barColor: barColor ,
+									chartRangeMin:$(this).data('min') || 0
+									});
+			});
+		
+		
+			//flot chart resize plugin, somehow manipulates default browser resize event to optimize it!
+			//but sometimes it brings up errors with normal resize event handlers
+			$.resize.throttleWindow = false;
+		
+			var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
+			var data = [
+			{ label: "social networks",  data: 38.7, color: "#68BC31"},
+			{ label: "search engines",  data: 24.5, color: "#2091CF"},
+			{ label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
+			{ label: "direct traffic",  data: 18.6, color: "#DA5430"},
+			{ label: "other",  data: 10, color: "#FEE074"}
+			]
+			function drawPieChart(placeholder, data, position) {
+				$.plot(placeholder, data, {
+				series: {
+					pie: {
+						show: true,
+						tilt:0.8,
+						highlight: {
+							opacity: 0.25
+						},
+						stroke: {
+							color: '#fff',
+							width: 2
+						},
+						startAngle: 2
+					}
+				},
+				legend: {
+					show: true,
+					position: position || "ne", 
+					labelBoxBorderColor: null,
+					margin:[-30,15]
+				}
+				,
+				grid: {
+					hoverable: true,
+					clickable: true
+				}
+				})
+			}
+			drawPieChart(placeholder, data);
+		
+			/**
+			we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically
+			so that's not needed actually.
+			*/
+			placeholder.data('chart', data);
+			placeholder.data('draw', drawPieChart);
+		
+		
+			//pie chart tooltip example
+			var $tooltip = $("<div class='tooltip top in'><div class='tooltip-inner'></div></div>").hide().appendTo('body');
+			var previousPoint = null;
+		
+			placeholder.on('plothover', function (event, pos, item) {
+			if(item) {
+				if (previousPoint != item.seriesIndex) {
+					previousPoint = item.seriesIndex;
+					var tip = item.series['label'] + " : " + item.series['percent']+'%';
+					$tooltip.show().children(0).text(tip);
+				}
+				$tooltip.css({top:pos.pageY + 10, left:pos.pageX + 10});
+			} else {
+				$tooltip.hide();
+				previousPoint = null;
+			}
+			
+			});
+		
+			/////////////////////////////////////
+			$(document).one('ajaxloadstart.page', function(e) {
+				$tooltip.remove();
+			});
+		
+		
+		
+		
+			var d1 = [];
+			for (var i = 0; i < Math.PI * 2; i += 0.5) {
+				d1.push([i, Math.sin(i)]);
+			}
+		
+			var d2 = [];
+			for (var i = 0; i < Math.PI * 2; i += 0.5) {
+				d2.push([i, Math.cos(i)]);
+			}
+		
+			var d3 = [];
+			for (var i = 0; i < Math.PI * 2; i += 0.2) {
+				d3.push([i, Math.tan(i)]);
+			}
+			
+		
+			var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
+			$.plot("#sales-charts", [
+				{ label: "Domains", data: d1 },
+				{ label: "Hosting", data: d2 },
+				{ label: "Services", data: d3 }
+			], {
+				hoverable: true,
+				shadowSize: 0,
+				series: {
+					lines: { show: true },
+					points: { show: true }
+				},
+				xaxis: {
+					tickLength: 0
+				},
+				yaxis: {
+					ticks: 10,
+					min: -2,
+					max: 2,
+					tickDecimals: 3
+				},
+				grid: {
+					backgroundColor: { colors: [ "#fff", "#fff" ] },
+					borderWidth: 1,
+					borderColor:'#555'
+				}
+			});
+		
+		
+			$('#recent-box [data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+			function tooltip_placement(context, source) {
+				var $source = $(source);
+				var $parent = $source.closest('.tab-content')
+				var off1 = $parent.offset();
+				var w1 = $parent.width();
+		
+				var off2 = $source.offset();
+				//var w2 = $source.width();
+		
+				if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+				return 'left';
+			}
+		
+		
+			$('.dialogs,.comments').ace_scroll({
+				size: 300
+			});
+			
+			
+			//Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+			//so disable dragging when clicking on label
+			var agent = navigator.userAgent.toLowerCase();
+			if(ace.vars['touch'] && ace.vars['android']) {
+				$('#tasks').on('touchstart', function(e){
+				var li = $(e.target).closest('#tasks li');
+				if(li.length == 0)return;
+				var label = li.find('label.inline').get(0);
+				if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+				});
+			}
+		
+			$('#tasks').sortable({
+				opacity:0.8,
+				revert:true,
+				forceHelperSize:true,
+				placeholder: 'draggable-placeholder',
+				forcePlaceholderSize:true,
+				tolerance:'pointer',
+				stop: function( event, ui ) {
+					//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
+					$(ui.item).css('z-index', 'auto');
+				}
+				}
+			);
+			$('#tasks').disableSelection();
+			$('#tasks input:checkbox').removeAttr('checked').on('click', function(){
+				if(this.checked) $(this).closest('li').addClass('selected');
+				else $(this).closest('li').removeClass('selected');
+			});
+		
+		
+			//show the dropdowns on top or bottom depending on window height and menu position
+			$('#task-tab .dropdown-hover').on('mouseenter', function(e) {
+				var offset = $(this).offset();
+		
+				var $w = $(window)
+				if (offset.top > $w.scrollTop() + $w.innerHeight() - 100) 
+					$(this).addClass('dropup');
+				else $(this).removeClass('dropup');
+			});
+		
+		})
+	</script>	
+
+	<script type="text/javascript"> ace.vars['base'] = 'static/vendor/ace_admin-1.4.0/src'; </script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/elements.onpage-help.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/assets/js/src/ace.onpage-help.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/docs/assets/js/rainbow.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/docs/assets/js/language/generic.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/docs/assets/js/language/html.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/docs/assets/js/language/css.js"></script>
+	<script src="static/vendor/ace_admin-1.4.0/docs/assets/js/language/javascript.js"></script>
+</body>
+</html>
