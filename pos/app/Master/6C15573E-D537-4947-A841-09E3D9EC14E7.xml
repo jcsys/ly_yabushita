@@ -1,0 +1,16 @@
+﻿<master version="5.3" minAllowVersion="5.3" ID="6C15573E-D537-4947-A841-09E3D9EC14E7">
+  <controls>
+    <control controlID="55FEEAEA-4111-4807-BD55-FE9A66423D3B" controlTypeID="Master" x="1" y="-30" w="1197" h="966" zOrder="0" masterID="6C15573E-D537-4947-A841-09E3D9EC14E7">
+      <sizeLocked>True</sizeLocked>
+      <groupChildrenDescriptors>
+        <control controlID="5EAFE3F4-0D61-42F5-A319-EEEC897D4A46" controlTypeID="TitleWindow" x="0" y="0" w="1197" h="966" zOrder="0">
+          <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+          <text>%E7%AA%97%E4%BD%93</text>
+          <textVAlign>VaTop</textVAlign>
+          <lineSpacing>0</lineSpacing>
+          <selectedIndex>-1</selectedIndex>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</master>

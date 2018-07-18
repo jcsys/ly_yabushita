@@ -1,0 +1,19 @@
+﻿<master version="5.3" minAllowVersion="5.3" ID="C56E8D41-4C64-45E8-9A10-F6745CD15D58">
+  <controls>
+    <control controlID="99B85224-FF92-4899-9B07-F67AD4DFAF26" controlTypeID="Master" x="867" y="607" w="329" h="309" zOrder="1" masterID="C56E8D41-4C64-45E8-9A10-F6745CD15D58">
+      <opacity>0</opacity>
+      <groupChildrenDescriptors>
+        <control controlID="D7C02143-0669-4E7A-8A5D-9356E9B4F798" controlTypeID="Panel" x="0" y="0" w="329" h="309" zOrder="0">
+          <color>4284900966</color>
+          <opacity>0</opacity>
+          <groupChildrenDescriptors>
+            <control controlID="070966CF-C527-4544-B754-84838A5B24FE" controlTypeID="Border" x="0" y="0" w="329" h="309" zOrder="0">
+              <alias>borderLayer</alias>
+            </control>
+          </groupChildrenDescriptors>
+          <thinkness>1</thinkness>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</master>

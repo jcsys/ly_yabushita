@@ -1,0 +1,77 @@
+﻿<project version="2.9" name="mps_LYScreen" ID="FF9F0B28-DC98-4C08-8501-EC63F634F4EC">
+  <params>
+    <pageParam version="5.3" minAllowVersion="5.3"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtDesktop" pageSize="(1052,780)" backgroundColor="4294967295" fontSize="18" fontFamily="Segoe UI" projectType="ptPersonalProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="POS_Main" ID="ED36BBBE-9E52-43BC-B3F8-FEE4B2F0C727" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="POS_Main" ID="98B1A42B-B658-4760-9F2C-9B7A49440277" expanded="False" code="Tdwm9iXsy1" thumbCode="Tdwm9iXsy1" status="psWhite" isfolder="False" isshownode="True"/>
+    </page>
+    <page name="Honbu" ID="AC842243-67C4-4489-B277-571EBD5729E8" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="buying_Menu" ID="169F41A5-51B1-4E2E-AE59-CA54701AA95B" expanded="False" code="7LdIATjmWa" thumbCode="7LdIATjmWa" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="C16344409E2BA665E770DB7802445400.png"/>
+          <image key="AEC101FFF4BAEBBBBCABF4317BD19D94.png"/>
+          <image key="4360C351729B511FB7928B116EA64783.png"/>
+          <image key="B8A8F2A93C11D4EA50EDEB4FD80B9273.png"/>
+          <image key="50845C928082E090853E99A017C776F2.png"/>
+          <image key="30959111547A220068F70FF99C2E7F0C.png"/>
+          <image key="66CD7385F72134C6A70828768E8EE9B6.png"/>
+        </images>
+      </page>
+      <page name="order_Input" ID="4AD12715-ECA8-4529-8FFB-0032198873BA" expanded="True" code="t94bs3OeOf" thumbCode="t94bs3OeOf" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="Buying_Input" ID="1A3550B2-CA89-4BDD-8D0E-535B457E2AA0" expanded="False" code="EgKHY5OaSr" thumbCode="EgKHY5OaSr" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="BinkMaster" ID="F59DB8E5-9A0D-417D-8403-22EFF6DEDC0A" expanded="True" code="IYm33MTJSC" thumbCode="IYm33MTJSC" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="ItemKindMaster" ID="CFC57354-D64A-430F-ADEB-6DABB7B5672B" expanded="True" code="VDtcrgpYTH" thumbCode="VDtcrgpYTH" status="psWhite" isfolder="False" isshownode="True"/>
+    </page>
+  </pages>
+  <trash>
+    <page name="Mainmenu" ID="C0EA4C6C-FE6B-4C08-A201-9444F720854C" expanded="True" code="hnQBpdOxD4" thumbCode="OuQayrnuXu" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
+        <image key="8BE3C7AC8FBB1747163ECAB9AB46AD44.svg"/>
+        <image key="D95E480717200F895E41DB6E5B869596.svg"/>
+        <image key="273F820FD8252835AA1E7927378AF485.svg"/>
+      </images>
+    </page>
+    <page name="页面" ID="CE9326A4-7A4B-4B5E-BD74-B20FDFC6ACB3" expanded="True" code="CEUgPbmCvt" thumbCode="PNXMqk7guX" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面1" ID="0804F358-1DB2-46D8-883D-060EAC1998F5" expanded="True" code="wqLekpeoRL" thumbCode="QgHYKG116u" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面2" ID="F4FE6994-C857-4937-8FF6-1EB4CD7A6B89" expanded="True" code="djiUpR2DOv" thumbCode="IcUXgvx56L" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面3" ID="402FCC6A-AE9E-4148-9795-C397C1FCDAC3" expanded="True" code="Aj7epWYXIC" thumbCode="OO7SRlov1r" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面" ID="13AF5746-AD96-4482-8959-EA3BA3F75BC0" expanded="True" code="JOoeI57vOa" thumbCode="5YFjedXtRm" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+  </trash>
+  <deletes/>
+  <masters>
+    <master name="母版" ID="01D2A9F0-44DD-4784-BA24-303426BAFB7D" code="YsR5GmH2GD" status="psWhite" createDate="2018-05-22 11:44:48">
+      <refPages/>
+    </master>
+    <master name="母版1" ID="D59165B2-9FF1-48E4-8546-2B41F0BC5C44" code="HgF7nmZMVk" status="psWhite" createDate="2018-05-22 11:45:05">
+      <refPages/>
+    </master>
+    <master name="母版2" ID="C56E8D41-4C64-45E8-9A10-F6745CD15D58" code="filHIP6hDY" status="psWhite" createDate="2018-07-18 11:09:41">
+      <refPages>
+        <page ID="98B1A42B-B658-4760-9F2C-9B7A49440277" refCount="1"/>
+      </refPages>
+    </master>
+    <master name="母版3" ID="6C15573E-D537-4947-A841-09E3D9EC14E7" code="NbzKC52V72" status="psWhite" createDate="2018-07-18 11:39:16">
+      <refPages>
+        <page ID="98B1A42B-B658-4760-9F2C-9B7A49440277" refCount="1"/>
+      </refPages>
+    </master>
+  </masters>
+  <images>
+    <image key="C16344409E2BA665E770DB7802445400.png"/>
+    <image key="8BE3C7AC8FBB1747163ECAB9AB46AD44.svg"/>
+    <image key="AEC101FFF4BAEBBBBCABF4317BD19D94.png"/>
+    <image key="4360C351729B511FB7928B116EA64783.png"/>
+    <image key="B8A8F2A93C11D4EA50EDEB4FD80B9273.png"/>
+    <image key="50845C928082E090853E99A017C776F2.png"/>
+    <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
+    <image key="30959111547A220068F70FF99C2E7F0C.png"/>
+    <image key="66CD7385F72134C6A70828768E8EE9B6.png"/>
+    <image key="D95E480717200F895E41DB6E5B869596.svg"/>
+    <image key="273F820FD8252835AA1E7927378AF485.svg"/>
+  </images>
+</project>

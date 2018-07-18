@@ -1,0 +1,56 @@
+<master version="5.3" minAllowVersion="5.3" ID="01D2A9F0-44DD-4784-BA24-303426BAFB7D">
+  <controls>
+    <control controlID="1A65CA3D-3AA7-460E-8C98-0E313BE487CD" controlTypeID="Master" x="505" y="438" w="67" h="88" zOrder="23" masterID="01D2A9F0-44DD-4784-BA24-303426BAFB7D">
+      <groupChildrenDescriptors>
+        <control controlID="22B4A168-8202-4E46-A4E3-8FF0DE52265A" controlTypeID="IconLabel2" x="0" y="0" w="67" h="88" zOrder="0">
+          <opacity>0.800000011920929</opacity>
+          <groupChildrenDescriptors>
+            <control controlID="4307ED91-AEE0-4BE8-B831-185AD3C32BFF" controlTypeID="Shape" x="2" y="0" w="62" h="62" zOrder="0">
+              <canMove>False</canMove>
+              <alias>shape</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="6E5FAC07-5397-444C-BF4E-300EAF9EB2AE" controlTypeID="Icon" x="2" y="0" w="62" h="62" zOrder="1">
+              <color>4288256409</color>
+              <opacity>0.800000011920929</opacity>
+              <canMove>False</canMove>
+              <alias>icon</alias>
+              <icon>
+                <ID/>
+                <iconFontName/>
+                <iconCode>-1</iconCode>
+              </icon>
+            </control>
+            <control controlID="FD040746-BF7F-4D28-8907-618E5A880E5D" controlTypeID="Label" x="2" y="66" w="63" h="22" zOrder="2">
+              <canMove>False</canMove>
+              <alias>label</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>%E5%BA%97%E9%96%93%E7%A7%BB%E5%8B%95</text>
+              <textColor>4281545523</textColor>
+              <textSize>16</textSize>
+              <textAlign>HaCenter</textAlign>
+              <lineSpacing>0</lineSpacing>
+              <useDefaultTextSize>False</useDefaultTextSize>
+              <selectedIndex>-1</selectedIndex>
+            </control>
+            <control controlID="01DEB631-1BC0-4540-AFFB-112317DCF552" controlTypeID="Shape" x="46" y="0" w="21" h="21" zOrder="3">
+              <color>4294901760</color>
+              <borderVisible>False</borderVisible>
+              <canMove>False</canMove>
+              <alias>alarm</alias>
+              <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
+              <text>2</text>
+              <textColor>4294967295</textColor>
+              <textSize>14</textSize>
+              <selectedIndex>-1</selectedIndex>
+              <radius>100</radius>
+              <radiusIsPercent>True</radiusIsPercent>
+            </control>
+          </groupChildrenDescriptors>
+          <iconSize>62</iconSize>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</master>
