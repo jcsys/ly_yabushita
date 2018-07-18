@@ -1,1 +1,1 @@
-# ly_yabushita
+# LY_Yabushita本部管理システム
