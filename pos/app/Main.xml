@@ -7,10 +7,21 @@
   </params>
   <pages>
     <page name="POS_Main" ID="ED36BBBE-9E52-43BC-B3F8-FEE4B2F0C727" expanded="True" status="psGreen" isfolder="True" isshownode="True">
-      <page name="POS_Main" ID="98B1A42B-B658-4760-9F2C-9B7A49440277" expanded="False" code="Tdwm9iXsy1" thumbCode="Tdwm9iXsy1" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="POS_Main" ID="98B1A42B-B658-4760-9F2C-9B7A49440277" expanded="True" code="Tdwm9iXsy1" thumbCode="Tdwm9iXsy1" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="POS_Odoo" ID="F5A85CDB-3DD6-45EB-A56A-7942CAABAD10" expanded="False" code="LyvT5OYTDA" thumbCode="LyvT5OYTDA" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="D44DAC25533D5A584DA3C45FCD58E092.png"/>
+          <image key="A797718EDCCE8C7532992F0BFF23C81E.svg"/>
+          <image key="126A6F5876AB871475ED29F6EA51CDC7.svg"/>
+          <image key="F616FA9B90E0AAD20781E56314DF2440.svg"/>
+          <image key="917CBE716CA8EE067639B6AF3E7D35B8.svg"/>
+          <image key="9F29A63FF3CB1FD1BE7876B9CE31FB1F.png"/>
+        </images>
+      </page>
+      <page name="分组" ID="6A31EBB4-13C3-4171-992D-7493663155B0" expanded="False" status="psGreen" isfolder="True" isshownode="True"/>
     </page>
     <page name="Honbu" ID="AC842243-67C4-4489-B277-571EBD5729E8" expanded="True" status="psGreen" isfolder="True" isshownode="True">
-      <page name="buying_Menu" ID="169F41A5-51B1-4E2E-AE59-CA54701AA95B" expanded="False" code="7LdIATjmWa" thumbCode="7LdIATjmWa" status="psWhite" isfolder="False" isshownode="True">
+      <page name="buying_Menu" ID="169F41A5-51B1-4E2E-AE59-CA54701AA95B" expanded="True" code="7LdIATjmWa" thumbCode="7LdIATjmWa" status="psWhite" isfolder="False" isshownode="True">
         <images>
           <image key="C16344409E2BA665E770DB7802445400.png"/>
           <image key="AEC101FFF4BAEBBBBCABF4317BD19D94.png"/>
@@ -21,17 +32,19 @@
           <image key="66CD7385F72134C6A70828768E8EE9B6.png"/>
         </images>
       </page>
-      <page name="order_Input" ID="4AD12715-ECA8-4529-8FFB-0032198873BA" expanded="True" code="t94bs3OeOf" thumbCode="t94bs3OeOf" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
-      <page name="Buying_Input" ID="1A3550B2-CA89-4BDD-8D0E-535B457E2AA0" expanded="False" code="EgKHY5OaSr" thumbCode="EgKHY5OaSr" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="order_Input" ID="4AD12715-ECA8-4529-8FFB-0032198873BA" expanded="False" code="t94bs3OeOf" thumbCode="t94bs3OeOf" status="psWhite" isfolder="False" isshownode="True"/>
+      <page name="Buying_Input" ID="1A3550B2-CA89-4BDD-8D0E-535B457E2AA0" expanded="True" code="1n5omYSdeW" thumbCode="1n5omYSdeW" status="psWhite" isfolder="False" isshownode="True"/>
       <page name="BinkMaster" ID="F59DB8E5-9A0D-417D-8403-22EFF6DEDC0A" expanded="True" code="IYm33MTJSC" thumbCode="IYm33MTJSC" status="psWhite" isfolder="False" isshownode="True"/>
-      <page name="ItemKindMaster" ID="CFC57354-D64A-430F-ADEB-6DABB7B5672B" expanded="True" code="VDtcrgpYTH" thumbCode="VDtcrgpYTH" status="psWhite" isfolder="False" isshownode="True"/>
+    </page>
+    <page name="Master_Item" ID="546E2AE8-F460-4697-BA6F-2C5E1CF11432" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="ItemKindMaster1" ID="B866B2D5-1410-44EA-A5A7-DA9EB93A0C6A" expanded="True" code="W4MhBNkdWK" thumbCode="W4MhBNkdWK" status="psWhite" isfolder="False" isshownode="True"/>
     </page>
   </pages>
   <trash>
     <page name="Mainmenu" ID="C0EA4C6C-FE6B-4C08-A201-9444F720854C" expanded="True" code="hnQBpdOxD4" thumbCode="OuQayrnuXu" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
       <images>
-        <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
         <image key="8BE3C7AC8FBB1747163ECAB9AB46AD44.svg"/>
+        <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
         <image key="D95E480717200F895E41DB6E5B869596.svg"/>
         <image key="273F820FD8252835AA1E7927378AF485.svg"/>
       </images>
@@ -41,6 +54,7 @@
     <page name="页面2" ID="F4FE6994-C857-4937-8FF6-1EB4CD7A6B89" expanded="True" code="djiUpR2DOv" thumbCode="IcUXgvx56L" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
     <page name="页面3" ID="402FCC6A-AE9E-4148-9795-C397C1FCDAC3" expanded="True" code="Aj7epWYXIC" thumbCode="OO7SRlov1r" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
     <page name="页面" ID="13AF5746-AD96-4482-8959-EA3BA3F75BC0" expanded="True" code="JOoeI57vOa" thumbCode="5YFjedXtRm" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="ItemKindMaster" ID="CFC57354-D64A-430F-ADEB-6DABB7B5672B" expanded="True" code="xAYu3IuEgL" thumbCode="VDtcrgpYTH" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
   </trash>
   <deletes/>
   <masters>
@@ -50,28 +64,35 @@
     <master name="母版1" ID="D59165B2-9FF1-48E4-8546-2B41F0BC5C44" code="HgF7nmZMVk" status="psWhite" createDate="2018-05-22 11:45:05">
       <refPages/>
     </master>
-    <master name="母版2" ID="C56E8D41-4C64-45E8-9A10-F6745CD15D58" code="filHIP6hDY" status="psWhite" createDate="2018-07-18 11:09:41">
+    <master name="母版2" ID="C56E8D41-4C64-45E8-9A10-F6745CD15D58" code="JJ1jTananb" status="psWhite" createDate="2018-07-18 11:09:41">
       <refPages>
         <page ID="98B1A42B-B658-4760-9F2C-9B7A49440277" refCount="1"/>
+        <page ID="F5A85CDB-3DD6-45EB-A56A-7942CAABAD10" refCount="1"/>
       </refPages>
     </master>
-    <master name="母版3" ID="6C15573E-D537-4947-A841-09E3D9EC14E7" code="NbzKC52V72" status="psWhite" createDate="2018-07-18 11:39:16">
+    <master name="母版3" ID="6C15573E-D537-4947-A841-09E3D9EC14E7" code="vkGbp3q2IT" status="psWhite" createDate="2018-07-18 11:39:16">
       <refPages>
         <page ID="98B1A42B-B658-4760-9F2C-9B7A49440277" refCount="1"/>
       </refPages>
     </master>
   </masters>
   <images>
-    <image key="C16344409E2BA665E770DB7802445400.png"/>
     <image key="8BE3C7AC8FBB1747163ECAB9AB46AD44.svg"/>
-    <image key="AEC101FFF4BAEBBBBCABF4317BD19D94.png"/>
-    <image key="4360C351729B511FB7928B116EA64783.png"/>
     <image key="B8A8F2A93C11D4EA50EDEB4FD80B9273.png"/>
+    <image key="A797718EDCCE8C7532992F0BFF23C81E.svg"/>
     <image key="50845C928082E090853E99A017C776F2.png"/>
-    <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
     <image key="30959111547A220068F70FF99C2E7F0C.png"/>
     <image key="66CD7385F72134C6A70828768E8EE9B6.png"/>
     <image key="D95E480717200F895E41DB6E5B869596.svg"/>
     <image key="273F820FD8252835AA1E7927378AF485.svg"/>
+    <image key="C16344409E2BA665E770DB7802445400.png"/>
+    <image key="AEC101FFF4BAEBBBBCABF4317BD19D94.png"/>
+    <image key="4360C351729B511FB7928B116EA64783.png"/>
+    <image key="F616FA9B90E0AAD20781E56314DF2440.svg"/>
+    <image key="126A6F5876AB871475ED29F6EA51CDC7.svg"/>
+    <image key="D44DAC25533D5A584DA3C45FCD58E092.png"/>
+    <image key="E71285E60CC121AE330BA2F0427C7663.svg"/>
+    <image key="917CBE716CA8EE067639B6AF3E7D35B8.svg"/>
+    <image key="9F29A63FF3CB1FD1BE7876B9CE31FB1F.png"/>
   </images>
 </project>

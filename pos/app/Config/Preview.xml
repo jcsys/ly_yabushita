@@ -4,7 +4,7 @@
   <isDisplayRemark>False</isDisplayRemark>
   <isDisplayComment>False</isDisplayComment>
   <backgroundColor>0</backgroundColor>
-  <isShowControllerPanel>False</isShowControllerPanel>
-  <isShowPreviewTools>False</isShowPreviewTools>
+  <isShowControllerPanel>True</isShowControllerPanel>
+  <isShowPreviewTools>True</isShowPreviewTools>
   <shellDrawModel>SmNormal</shellDrawModel>
 </previews>

@@ -1,4 +1,4 @@
-﻿<mockup version="5.3" minAllowVersion="5.3" ID="4AD12715-ECA8-4529-8FFB-0032198873BA" platform="MtDesktop" defaultW="1052" defaultH="780" measureW="1131" measureH="913" mobileScreenScale="0">
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="1A3550B2-CA89-4BDD-8D0E-535B457E2AA0" platform="MtDesktop" defaultW="1052" defaultH="780" measureW="1131" measureH="913" mobileScreenScale="0">
   <controls controlCount="90">
     <control controlID="4C05142D-D83B-4B0F-AE89-A1499246B247" controlTypeID="Table" x="3" y="100" w="1106" h="647" zOrder="0">
       <borderColor>4278216345</borderColor>
@@ -2756,7 +2756,6 @@
     <control controlID="0B77F037-B523-49AE-8266-E86644825F68" controlTypeID="Button" x="2" y="856" w="88" h="53" zOrder="72">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F1%0D%0A%E5%87%A6%E7%90%86%E5%A4%89%E6%9B%B4</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2765,7 +2764,6 @@
     <control controlID="DDBF9832-FE0A-4F22-B52B-403A02F2C726" controlTypeID="Button" x="90" y="856" w="94" h="52" zOrder="73">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F2</text>
-      <textSize>16</textSize>
       <textVAlign>VaTop</textVAlign>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
@@ -2775,7 +2773,6 @@
     <control controlID="68FA0C65-C890-4495-A719-6C89C7E694BB" controlTypeID="Button" x="183" y="856" w="94" h="52" zOrder="74">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F3%0D%0A%E5%9C%A8%E5%BA%AB</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2784,7 +2781,6 @@
     <control controlID="E1800212-3348-44AA-AB86-08FDA37D63FC" controlTypeID="Button" x="276" y="856" w="94" h="52" zOrder="75">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F4%0D%0A%E8%A1%8C%E5%89%8A%E9%99%A4</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2793,7 +2789,6 @@
     <control controlID="DD3324E5-0EBA-4116-8F3A-E9A1A966CAFB" controlTypeID="Button" x="369" y="856" w="94" h="52" zOrder="76">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F5%0D%0A%E8%A1%8C%E8%BF%BD%E5%8A%A0</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2802,7 +2797,6 @@
     <control controlID="3A95B805-052D-4769-BE04-4F4C40B750FF" controlTypeID="Button" x="462" y="856" w="94" h="52" zOrder="77">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F6%0D%0A%E8%A1%8C%E6%8C%BF%E5%85%A5</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2811,7 +2805,6 @@
     <control controlID="C3085F34-A6F2-47E7-A366-913481487455" controlTypeID="Button" x="555" y="856" w="94" h="52" zOrder="78">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F7%0D%0A%E8%A1%8C%E8%A4%87%E5%86%99</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2820,7 +2813,6 @@
     <control controlID="2BC19E7F-9AD8-42F8-BCD7-F4B1A2141933" controlTypeID="Button" x="648" y="856" w="94" h="52" zOrder="79">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F8%0D%0A</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2829,7 +2821,6 @@
     <control controlID="80FFEA71-18B2-4F12-88C4-4F938817178A" controlTypeID="Button" x="741" y="856" w="94" h="52" zOrder="80">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F9%0D%0A%E9%96%89%E3%81%98%E3%82%8B</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2838,7 +2829,6 @@
     <control controlID="756AC4BC-2271-47E0-B0A0-FFDAD98C3FA8" controlTypeID="Button" x="834" y="856" w="94" h="52" zOrder="81">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F10%0D%0A%E4%B8%AD%E6%AD%A2</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
@@ -2847,7 +2837,6 @@
     <control controlID="182D0C48-A01E-4AFA-A494-1BB65578710D" controlTypeID="Button" x="927" y="856" w="94" h="52" zOrder="82">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F11</text>
-      <textSize>16</textSize>
       <textVAlign>VaTop</textVAlign>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
@@ -2857,7 +2846,6 @@
     <control controlID="D5613647-46D2-4910-8847-F840070E52CF" controlTypeID="Button" x="1017" y="856" w="94" h="52" zOrder="83">
       <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Regular" weight="400" isBold="False" isItalic="False"/>
       <text>F12%0D%0A%E9%A0%90%E9%87%91</text>
-      <textSize>16</textSize>
       <lineSpacing>0</lineSpacing>
       <useDefaultTextSize>False</useDefaultTextSize>
       <selectedIndex>-1</selectedIndex>
