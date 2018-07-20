@@ -2,16 +2,16 @@ window.config = {
 	"logo": "",
 	"background": "#FFFFFF",
 	"shell": "desktop",
-	"showControlPanel": false,
+	"showControlPanel": true,
 	"iOSGuide": false,
-	"alwaysShowLinks": false,
-	"hoverShowLinks": false,
-	"hoverShowRemarks": false,
+	"alwaysShowLinks": true,
+	"hoverShowLinks": true,
+	"hoverShowRemarks": true,
 	"showComments": false,
 	"showQRCode": false,
 	"hintLinks": false,
 	"scrollRemarks": false,
-	"isShowAllPageNode": false,
-	"isShowPreviewTools": false,
-	"showRemarkFlag": false
+	"isShowAllPageNode": true,
+	"isShowPreviewTools": true,
+	"showRemarkFlag": true
 }
