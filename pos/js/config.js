@@ -1,6 +1,6 @@
 window.config = {
 	"logo": "",
-	"background": "#000000",
+	"background": "#FFFFFF",
 	"shell": "desktop",
 	"showControlPanel": false,
 	"iOSGuide": false,
